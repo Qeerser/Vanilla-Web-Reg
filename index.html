@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="icon" type="image/x-icon" href="turtle.png">
+    <link rel="stylesheet" href="index.css">
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="user.html" class="nav-link">User Management</a>
+      <a href="index.html" class="nav-link reg" style="display:none;">Register user</a>
+  </nav>
+  
+    <div class="container">
+      <h1 class="header">Register Form</h1>
+      <div class="flex form-input">
+        <label class="header-form" for="firstname"> Firstname</label>
+        <input class="form" type="text" name="firstname" id="firstname" />
+      </div>
+      <div class="flex form-input">
+        <label class="header-form" for="lastname"> Lastname</label>
+        <input class="form" type="text" name="lastname" id="lastname" />
+      </div>
+      <div class="flex form-input">
+        <label class="header-form" for="age"> Age</label>
+        <input class="form" type="number" name="age" min="0" max="100" id="age" />
+      </div>
+
+      <div class="form-input">
+        <fieldset>
+          <legend>Gender</legend>
+          <div class="select">
+            <input type="radio" name="gender" id="male" value="male"/>
+            <label for="male">Male</label>
+          </div>
+          <div class="select">
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+          </div>
+          <div class="select">
+            <input type="radio" name="gender" id="other" value="other" />
+            <label for="other">Other</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-input">
+        <fieldset>
+          <legend>Interested</legend>
+          <div class="select">
+            <input type="checkbox" name="interested" id="sport" value="sport" />
+            <label for="sport">Sport</label>
+          </div>
+          <div class="select">
+            <input type="checkbox" name="interested" id="music" value="music" />
+            <label for="music">Music</label>
+          </div>
+          <div class="select">
+            <input type="checkbox" name="interested" id="game" value="game" />
+            <label for="game">Game</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-input">
+        <legend>     <label for="description">More description</label></legend>
+   
+        <textarea class="form" name="description" id="description"></textarea>
+      </div>
+
+      <div class="center form-input" style="display: none">
+        <a href="http://google">Term and Condition</a>
+      </div>
+      <div id="message" class="center message">
+      </div>
+      <div class="center form-input">
+        <button onclick="submitData()" class="button">Submit</button>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>

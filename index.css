@@ -1,0 +1,218 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+body {
+    font-family: "Poppins", sans-serif; /* New clean and modern font */
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.container {
+    width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.header-form {
+    width: 120px;
+    margin-right: 10px;
+    color: #555;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+input.form, textarea {
+    border: 1px solid #ccc;
+    border-radius: 20px; /* More rounded border */
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea{
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #28a745; /* Green focus color */
+    box-shadow: 0px 0px 5px rgba(40, 167, 69, 0.5);
+}
+
+textarea {
+    height: 100px;
+}
+
+.button {
+    font-weight: bold;
+    background-color: #28a745; /* New color for button */
+    color: white;
+    border: none;
+    border-radius: 30px; /* More rounded button */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+.center {
+    text-align: center;
+}
+
+.select {
+    margin: 5px 0;
+    color: #555;
+}
+
+.message{
+    padding: 10px;
+    margin: 10px;
+    display: none;
+    border-radius: 20px;
+}
+.head{
+    background-color: #333;
+    margin: 10px 30px 0px 30px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 40px; /* More rounded button */
+    padding: 8px 1px;
+    display: block;
+}
+
+.message.success{
+    color:#ffffff ;
+    background-color: rgb(159, 215, 18);
+    display: block;
+    font-weight: bold;
+}
+
+.message.danger{
+    border-radius: 40px;
+    color: white;
+    background-color: crimson;
+    display: block;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Custom style for checkboxes and radio buttons */
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px; /* Space before text */
+    transform: scale(1.2); /* Slightly larger */
+    accent-color: #28a745; /* Green accent color */
+}
+
+.boxs {
+    display: flex;
+    margin: 10px;
+}
+
+.box{
+    width: 120px;
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+/* For smoother text rendering */
+
+/* Navbar container */
+.navbar {
+    background-color: #333;  /* Dark background color */
+    overflow: hidden;
+    padding: 10px 20px;  /* Padding for top and bottom, left and right */
+}
+
+/* Navbar link styles */
+.nav-link {
+    color: white;  /* Text color */
+    text-align: center;
+    text-decoration: none;  /* Remove underline */
+    padding: 14px 20px;  /* Space around the link */
+    font-size: 16px;  /* Font size */
+    display: inline-block;  /* Keep links in a line */
+}
+
+/* Hover effects for links */
+.nav-link:hover {
+    background-color: #ddd;  /* Light background on hover */
+    color: black;  /* Text color on hover */
+    border-radius: 4px;  /* Add slight rounded corners */
+}
+
+/* Active link styling (optional) */
+.nav-link.active {
+    background-color: #04AA6D;  /* Highlight active link */
+    color: white;  /* Keep text white */
+    border-radius: 4px;  /* Match rounded corners */
+}
+
+/* ตาราง */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button.delete {
+    background-color: #f44336;
+}
+
+.button.delete:hover {
+    background-color: #d32f2f;
+}
+
+.button.edit {
+    margin-right: 10px;
+}
